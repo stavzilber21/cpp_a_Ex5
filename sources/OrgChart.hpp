@@ -20,42 +20,14 @@ namespace ariel{
         OrgChart& add_sub(string name1, string name2);
         friend ostream& operator<<(ostream& output, const OrgChart &org);
 
-        class My_Iterator{
-            private:
-                Node *curr;
-                int i;
-
-            public:
-                My_Iterator(){
-                    this->curr = NULL;
-                    this->i = 0;
-                }
-                My_Iterator operator++(int){
-                    My_Iterator iter = *this;
-                    return iter;
-                }
-                My_Iterator& operator++(){
-                    return *this;
-                }
-                bool operator!=(const My_Iterator& iter) const{
-                    return false;
-                }
-                string* operator->() const{
-                    return nullptr;
-                }
-                string operator*() const{
-                    return "";
-                }
-
-        };
-        int* begin();
-        int* end();
-        My_Iterator begin_level_order();
-        My_Iterator end_level_order();
-        My_Iterator begin_reverse_order();
-        My_Iterator reverse_order();
-        My_Iterator begin_preorder();
-        My_Iterator end_preorder();
+        string * begin();
+        string * end();
+        vector<string>::iterator begin_level_order();
+        vector<string>::iterator end_level_order();
+        vector<string>::iterator begin_reverse_order();
+        vector<string>::iterator reverse_order();
+        vector<string>::iterator begin_preorder();
+        vector<string>::iterator end_preorder();
     };
 
 }

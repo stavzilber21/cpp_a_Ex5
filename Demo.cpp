@@ -11,7 +11,7 @@
 #include <stdexcept>
 using namespace std;
 
-#include "sources/OrgChart.hpp"
+#include "OrgChart.hpp"
 using namespace ariel;
 
 int main() {

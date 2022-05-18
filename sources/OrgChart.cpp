@@ -17,29 +17,30 @@ ostream& ariel::operator<<(ostream& output, const OrgChart &org){
     return output;
 }
 
-int* OrgChart::begin(){
-    int *i =0;
+string * OrgChart::begin(){
+    string *i =0;
     return i;
 }
-int* OrgChart:: end(){
-    int *i =0;
+string* OrgChart:: end(){
+    string *i =0;
     return i;
 }
-OrgChart::My_Iterator OrgChart::begin_level_order(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::begin_level_order(){
+
+    return {};
 }
-OrgChart::My_Iterator OrgChart::end_level_order(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::end_level_order(){
+    return {};
 }
-OrgChart::My_Iterator OrgChart::begin_reverse_order(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::begin_reverse_order(){
+    return {};
 }
-OrgChart::My_Iterator OrgChart::reverse_order(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::reverse_order(){
+    return {};
 }
-OrgChart::My_Iterator OrgChart::begin_preorder(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::begin_preorder(){
+    return {};
 }
-OrgChart::My_Iterator OrgChart::end_preorder(){
-    return OrgChart::My_Iterator();
+vector<string>::iterator OrgChart::end_preorder(){
+    return {};
 }
